@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from "./Components/Header";
+import Logo from "./Components/Logo";
+import LoginForm from "./Components/LoginForm";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    
+    <div className="Container">
+      <Logo/>
+      <div className="BlueSlice">
+        <h2 className="Quote">“Politics are usually the executive expression of human immaturity.”</h2>
+        <h2 className="Writer">Vera Brittain</h2>
+      </div>
+     <Header/>
+     <LoginForm/>
     </div>
   );
 }
