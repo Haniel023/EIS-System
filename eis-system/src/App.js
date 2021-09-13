@@ -1,9 +1,9 @@
-import Header from "./Components/Header";
-import RegHeader from "./Components/RegHeader";
-import Logo from "./Components/Logo";
-import Logo2 from "./Components/Logo2";
-import LoginForm from "./Components/LoginForm";
-import RegisterForm from "./Components/RegisterForm";
+import Header from "./Components/Login/Header";
+import RegHeader from "./Components/Register/RegHeader";
+import Logo from "./Components/Login/Logo";
+import Logo2 from "./Components/Register/Logo2";
+import LoginForm from "./Components/Login/LoginForm";
+import RegisterForm from "./Components/Register/RegisterForm";
 import {BrowserRouter as Router, Route} from "react-router-dom";
 
 
