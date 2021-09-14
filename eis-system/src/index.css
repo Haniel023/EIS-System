@@ -1,24 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 
-body{
-  font-family: 'Montserrat';
-  background-color: #E5E5E5;
+body {
+  font-family: "Montserrat";
+  background-color: #e5e5e5;
 }
 
 /*--------------------------- Login Page -------------------------*/
 
-.Container{
+.Container {
   position: absolute;
   width: 922px;
   height: 614px;
   left: 499px;
   top: 180px;
-  background: #FFFFFF;
+  background: #ffffff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 37px;
 }
 
-.header{
+.header {
   position: absolute;
   width: 500px;
   height: 84px;
@@ -29,21 +29,22 @@ body{
   font-weight: 600;
   font-size: 20px;
   line-height: 45px;
-  color: #2D2D2D;
+  color: #2d2d2d;
 }
 
-.BlueSlice{
+.BlueSlice {
   position: absolute;
   width: 333px;
   height: 614px;
   left: -1px;
   top: 0px;
   z-index: 1;
-  background: #0ABAB5;
+  background: #0abab5;
   border-radius: 37px 0px 0px 37px;
 }
 
-.logo, .logo2{
+.logo,
+.logo2 {
   position: absolute;
   display: flex;
   height: 130px;
@@ -51,17 +52,18 @@ body{
   z-index: 2;
 }
 
-.logo{
-    top: 120px;
-    left: 72px;
+.logo {
+  top: 120px;
+  left: 72px;
 }
 
-.logo2{
-    top: 380px;
-    left: 570px;
+.logo2 {
+  top: 380px;
+  left: 570px;
 }
 
-.Quote, .Quote2{
+.Quote,
+.Quote2 {
   position: absolute;
   width: 268px;
   height: 40px;
@@ -73,7 +75,8 @@ body{
   color: #373737;
 }
 
-.Writer, .Writer2{
+.Writer,
+.Writer2 {
   position: absolute;
   width: 130px;
   height: 22px;
@@ -82,31 +85,31 @@ body{
   font-size: 18px;
   line-height: 22px;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
-.Quote{
+.Quote {
   left: 30px;
   top: 270px;
 }
 
-.Quote2{
+.Quote2 {
   left: 30px;
   top: 400px;
 }
 
-.Writer{
+.Writer {
   left: 170px;
   top: 340px;
 }
 
-.Writer2{
+.Writer2 {
   left: 170px;
   top: 470px;
 }
 
-.login{
-  position:absolute;
+.login {
+  position: absolute;
   z-index: 3;
   width: 500px;
   height: 84px;
@@ -116,43 +119,45 @@ body{
 
 /*------------------------------- Input Tabs -----------------------------*/
 
-.eMail, .pass{
+.eMail,
+.pass {
   position: absolute;
-  background: linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(0deg, #FFFFFF, #FFFFFF), #FFFFFF;
+  background: linear-gradient(0deg, #ffffff, #ffffff),
+    linear-gradient(0deg, #ffffff, #ffffff), #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.07);
   box-sizing: border-box;
   border-radius: 19px;
 }
 
-.eMail{
+.eMail {
   width: 441px;
   height: 41px;
 }
 
-.pass{
+.pass {
   width: 441px;
   height: 41px;
   top: 90px;
 }
 
-.btn{
+.btn {
   position: absolute;
   width: 177px;
   height: 42px;
   left: 130px;
   top: 150px;
-  background: #0ABAB5;
+  background: #0abab5;
   border-radius: 17px;
-  border:#0ABAB5;
+  border: #0abab5;
   font-family: "Montserrat";
   font-size: medium;
-  color:white;
+  color: white;
 }
-
 
 /*---------------------------------- Labels -----------------------------------*/
 
-.lemail, .lpass{
+.lemail,
+.lpass {
   position: absolute;
   width: 41px;
   height: 19px;
@@ -163,17 +168,17 @@ body{
   color: #434343;
 }
 
-.lemail{
+.lemail {
   left: 3px;
   top: 2px;
 }
 
-.lpass{
+.lpass {
   left: 2px;
   top: 70px;
 }
 
-.createAccount{
+.createAccount {
   position: absolute;
   width: 130px;
   height: 16px;
@@ -183,35 +188,35 @@ body{
   font-weight: 300;
   font-size: 12px;
   line-height: 15px;
-  color: #0ABAB5;
+  color: #0abab5;
 }
 
 /*----------------------------------- Register Page--------------------------------------- */
 
-.register{
+.register {
   position: absolute;
   width: 922px;
   height: 782px;
   left: 499px;
   top: 149px;
 
-  background: #FFFFFF;
+  background: #ffffff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 37px;
 }
 
-.BlueSlice2{
+.BlueSlice2 {
   position: absolute;
   width: 333px;
   height: 782px;
   left: 499px;
   top: 149px;
   z-index: 1;
-  background: #0ABAB5;
+  background: #0abab5;
   border-radius: 37px 0px 0px 37px;
 }
 
-.regHeader{
+.regHeader {
   position: absolute;
   width: 373px;
   height: 49px;
@@ -225,43 +230,48 @@ body{
   color: #000000;
 }
 
-
 /*--------------------------------------- Input tabs------------------------------------------------ */
 
-.firstName, .lastName, .e-Mail, .passW{
+.firstName,
+.lastName,
+.e-Mail,
+.passW {
   position: absolute;
   width: 441px;
   height: 41px;
-  background: linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(0deg, #FFFFFF, #FFFFFF), #FFFFFF;
+  background: linear-gradient(0deg, #ffffff, #ffffff),
+    linear-gradient(0deg, #ffffff, #ffffff), #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.07);
   box-sizing: border-box;
   border-radius: 19px;
 }
 
-
-.firstName{
+.firstName {
   left: 370px;
   top: 230px;
 }
 
-.lastName{
+.lastName {
   left: 370px;
   top: 305px;
 }
 
-.e-Mail{
+.e-Mail {
   left: 370px;
   top: 380px;
 }
 
-.passW{
+.passW {
   left: 370px;
   top: 452px;
 }
 
 /*-------------------------------------- Labels------------------------------------- */
 
-.first-Name, .last-Name, .l-email, .l-pass{
+.first-Name,
+.last-Name,
+.l-email,
+.l-pass {
   position: absolute;
   width: 77px;
   height: 19px;
@@ -273,39 +283,90 @@ body{
   color: #434343;
 }
 
-.first-Name{
+.first-Name {
   left: 378px;
   top: 210px;
 }
 
-
-.last-Name{
+.last-Name {
   left: 378px;
   top: 285px;
 }
 
-
-.l-email{
+.l-email {
   left: 378px;
   top: 359px;
 }
 
-.l-pass{
+.l-pass {
   left: 378px;
   top: 432px;
 }
 
-.btn-reg{
+.btn-reg {
   position: absolute;
   width: 177px;
   height: 42px;
   left: 523px;
   top: 520px;
-  background: #0ABAB5;
+  background: #0abab5;
   border-radius: 17px;
-  border:#0ABAB5;
+  border: #0abab5;
   font-family: "Montserrat";
   font-size: medium;
-  color:white;
+  color: white;
 }
 
+/*----------------------------------- Dashboard Page--------------------------------------- */
+
+/*---------------------- Header Panel ----------------------- */
+
+.headerPanel {
+  display: flex;
+  align-items: center;
+  width: auto;
+  color: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background: #0abab5;
+  border-radius: 5px;
+}
+
+.alignMiddle {
+  vertical-align: middle;
+  text-align: center;
+}
+
+.noMargin {
+  margin: 0;
+}
+
+.inlineBlock {
+  display: inline-block;
+  position: relative;
+}
+
+.childPanel1 {
+  width: 20%;
+}
+.childPanel2 {
+  width: 40%;
+}
+.childPanel3 {
+  width: 40%;
+}
+
+.childLogo {
+  width: inherit;
+}
+.childLogo2 {
+  width: inherit;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  border-radius: 50%;
+  border: 5px solid #ffffff;
+  display: inline-block;
+}
