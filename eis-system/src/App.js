@@ -4,7 +4,7 @@ import Logo from "./Components/Login/Logo";
 import Logo2 from "./Components/Register/Logo2";
 import LoginForm from "./Components/Login/LoginForm";
 import RegisterForm from "./Components/Register/RegisterForm";
-import dashboard from "./Components/Dashboard/Dashboard"
+import Dashboard from "./Components/Dashboard/Dashboard"
 import {BrowserRouter as Router, Route} from "react-router-dom";
 
 
@@ -40,7 +40,7 @@ function App() {
      </Route>
 
      <Route path="/Dashboard">
-        <dashboard/>
+        <Dashboard/>
      </Route>
 
     </Router>    
