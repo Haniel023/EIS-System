@@ -1,11 +1,12 @@
-import React from 'react'
+import React from "react";
+import HeaderPanel from "./HeaderPanel";
 
 const Dashboard = () => {
-    return (
-        <div>
-            <h1>Hello! I'm dashboard! nice</h1>
-        </div>
-    )
-}
+  return (
+    <div>
+      <HeaderPanel />
+    </div>
+  );
+};
 
-export default Dashboard
+export default Dashboard;
