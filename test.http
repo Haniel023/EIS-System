@@ -2,7 +2,7 @@ POST http://localhost:8080/api/auth/Register
 
 {
     "firstName": "jether",
-    "lastName": "de leon",
-    "email": "jetherdeleon@email.com",
-    "password": "jaskhdkjadhk"
+    "lastName": "haniel",
+    "email": "jether@haniel.com",
+    "password": "123456"
 }

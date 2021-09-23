@@ -9,7 +9,7 @@ module.exports = (req, res, next) => {
         next();
     }
     catch(error) {
-        res.stat(401).json({
+        res.status(401).json({
             message:'Token cannot authorize'
         });
     }
