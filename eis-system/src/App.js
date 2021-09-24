@@ -1,21 +1,44 @@
-import Header from "./Components/Login/Header";
-import RegHeader from "./Components/Register/RegHeader";
-import Logo from "./Components/Login/Logo";
-import Logo2 from "./Components/Register/Logo2";
-import LoginForm from "./Components/Login/LoginForm";
-import RegisterForm from "./Components/Register/RegisterForm";
-import Dashboard from "./Components/Dashboard/Dashboard"
+import { useEffect } from 'react';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { Provider } from 'react-redux';
 import store from "./store";
-import Layout from "./hoc/Layout";
+import { check_authenticated } from "../src/Actions/action.auth";
+import setAuthToken from "../src/util/setAuthToken"
+import Routes from "./util/routing/routes";
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+
+//Check for token
+if (localStorage.token) {
+  setAuthToken(localStorage.token);
+}
+
 
 function App() {
+  //Setting up token
+  useEffect(() => {
+    store.dispatch(check_authenticated());
+    // eslint-disable-next-line
+  }, []);
   return (
 
     <Provider store={store}>
+      <ToastContainer
+        position="top-right"
+        autoClose={3000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+      />
       <Router>
-          <Layout/>
+        <Routes />
+
+        {/* <Layout/>
 
         <Route exact path="/" component={LoginForm}>
           <div className="Container">
@@ -43,7 +66,7 @@ function App() {
 
         <Route exact path="/Dashboard" component={Dashboard}>
           <Dashboard />
-        </Route>
+        </Route> */}
 
       </Router>
 

@@ -32,7 +32,31 @@ export default function (state = initialState, action) {
                 ...state,
                 isAuthenticated: false,
                 user: null
+            };
+        case REGISTER_FAILED:
+            localStorage.removeItem('access');
+            return {
+                ...state,
+                isAuthenticated: false,
+                user: null
+            };
+        case REGISTER_SUCESS:
+            return {
+                ...state,
+                isAuthenticated: false
             }
+        case AUTHENTICATION_SUCESS:
+            return {
+                ...state,
+                isAuthenticated: true,
+                access: payload.token,
+            };
+        case AUTHENTICATION_FAILED:
+            return {
+                ...state,
+                isAuthenticated: false,
+                access: null,
+            };
         default:
             return state;
 
