@@ -66,12 +66,12 @@ router.post("/Register", (req, res, next) => {
                 message: 'User created',
                 result: response
             })
-                .catch(err => {
-                    res.status(500).json({
-                        error,
-                    });
-                });
+        }) .catch(err => {
+            res.status(500).json({
+                error,
+            });
         });
+
     });
 });
 

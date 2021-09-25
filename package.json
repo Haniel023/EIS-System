@@ -1,7 +1,6 @@
 {
   "name": "eis-system",
   "version": "1.0.0",
-  "description": "",
   "main": "server.js",
   "dependencies": {
     "bcrypt": "^5.0.1",
@@ -28,5 +27,6 @@
   "bugs": {
     "url": "https://github.com/Haniel023/EIS-System/issues"
   },
-  "homepage": "https://github.com/Haniel023/EIS-System#readme"
+  "homepage": "https://github.com/Haniel023/EIS-System#readme",
+  "description": ""
 }
