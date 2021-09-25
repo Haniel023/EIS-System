@@ -1,4 +1,3 @@
-
 import profit from "./Assets/profit.png";
 import salesRevenue from "./Assets/salesRevenue.png";
 import soldUnits from "./Assets/soldUnits.png";

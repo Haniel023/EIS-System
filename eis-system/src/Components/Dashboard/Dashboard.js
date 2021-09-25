@@ -1,5 +1,10 @@
 import React from "react";
 import HeaderPanel from "./HeaderPanel";
+import Revenue from "./Revenue";
+import Expenses from "./Expenses";
+import IncomeStatement from "./IncomeStatement";
+import RevenueTile from "./RevenueTile";
+import ExpensesTile from "./ExpensesTile";
 import { logout } from "../../Actions/action.auth"
 import { connect } from "react-redux";
 import { useHistory } from "react-router-dom"
@@ -41,6 +46,13 @@ const Dashboard = ({ isAuthenticated }) => {
         <>{isAuthenticated ? loggedInNow : notloggedIn}</>
       </span>
       <HeaderPanel />
+      <div className="mainPanel">
+          <Revenue />
+          <Expenses />
+          <IncomeStatement />
+          <RevenueTile />
+          <ExpensesTile />
+      </div>
       <button onClick={()=>{ logoutSubmission() }} to="/">LOGOUT</button>
     </div>
   );
