@@ -5,6 +5,8 @@ import Expenses from "./Expenses";
 import IncomeStatement from "./IncomeStatement";
 import RevenueTile from "./RevenueTile";
 import ExpensesTile from "./ExpensesTile";
+import NpMarginTile from "./NpMarginTile";
+import GpMarginTile from "./GpMarginTile";
 import { logout } from "../../Actions/action.auth"
 import { connect } from "react-redux";
 import { useHistory } from "react-router-dom"
@@ -52,6 +54,8 @@ const Dashboard = ({ isAuthenticated }) => {
           <IncomeStatement />
           <RevenueTile />
           <ExpensesTile />
+          <NpMarginTile />
+          <GpMarginTile />
       </div>
       <button onClick={()=>{ logoutSubmission() }} to="/">LOGOUT</button>
     </div>

@@ -3,6 +3,7 @@
 body {
   font-family: "Montserrat";
   background-color: #e5e5e5;
+  padding: 0 2rem;
 }
 
 /*--------------------------- Login Page -------------------------*/
@@ -337,9 +338,9 @@ color: #0abab5;
   grid-template-rows: auto;
   grid-template-areas: 
   "tLeft tLeft tRight tURight"
-  "tLeft tLeft tRight tURight"
-  "bLeft bLeft tRight tURight"
-  "bLeft bLeft tRight tURight";
+  "tLeft tLeft tRight tUMRight"
+  "bLeft bLeft tRight bUMRight"
+  "bLeft bLeft tRight bURight";
   column-gap: 20px;
   row-gap: 20px;
 }
@@ -428,7 +429,6 @@ color: #0abab5;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   background: #ffffff;
   border-radius: 20px;
-  margin-top: 20px;
   flex-direction: column;
 }
 
@@ -465,6 +465,7 @@ color: #0abab5;
   margin-top: 20px;
   flex-direction: column;
   text-align: center;
+  font-size: .8rem;
 }
 
 #subRevenue{
@@ -472,20 +473,78 @@ color: #0abab5;
   margin: 5px auto auto;
 }
 
-/* ---------------------- Expenses Tile -----------------------
+#subRevPercent{
+  font-size: 1.8rem;
+}
+
+/* ---------------------- Expenses Tile -----------------------*/
 .expensesTile{
   grid-area: tUMRight;
   height: 115px;
   color: #ffffff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  background: #0abab5;
+  background: #0a8783;
   border-radius: 5px;
-  margin-top: 20px;
+  margin-top: -15px;
   flex-direction: column;
   text-align: center;
+  font-size: .8rem;
 }
 
 #subExpenses{
   font-weight: 100;
   margin: 5px auto auto;
-} */
+} 
+
+#subExpPercent{
+  font-size: 1.8rem;
+}
+
+/* ---------------------- Net Profit Margin Tile -----------------------*/
+.npMarginTile{
+  grid-area: bUMRight;
+  height: 115px;
+  color: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background: #0abab5;
+  border-radius: 5px;
+  margin-top: -15px;
+  flex-direction: column;
+  text-align: center;
+  font-size: .8rem;
+}
+
+#npMarginTile{
+  font-weight: 100;
+  margin: 5px auto auto;
+} 
+
+#npMarginPercent{
+  font-size: 2rem;
+  margin-top: 1%;
+}
+
+/* ---------------------- Gross Profit Margin Tile -----------------------*/
+
+.gpMarginTile{
+  grid-area: bURight;
+  height: 115px;
+  color: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background: #0a8783;
+  border-radius: 5px;
+  margin-top: -15px;
+  flex-direction: column;
+  text-align: center;
+  font-size: .8rem;
+}
+
+#gpMarginTile{
+  font-weight: 100;
+  margin: 5px auto auto;
+} 
+
+#gpMarginPercent{
+  font-size: 2rem;
+  margin-top: 1%;
+}
