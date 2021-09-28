@@ -337,7 +337,7 @@ color: #0abab5;
   grid-template-rows: auto;
   grid-template-areas: 
   "tLeft tLeft tRight tURight"
-  "tLeft tLeft tRight tUMRight"
+  "tLeft tLeft tRight tURight"
   "bLeft bLeft tRight tURight"
   "bLeft bLeft tRight tURight";
   column-gap: 20px;
