@@ -22,6 +22,6 @@ app.get('/', (req, res) => {
 
 const PORT = 8080;
 
-app.listen(PORT, () =>{
+app.listen(PORT || 8000, () =>{
     console.log(`App is running in port ${PORT}`)
 })
