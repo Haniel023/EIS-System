@@ -10,7 +10,7 @@ const YearlyCost = () => {
     };
 
     const getData = Axios.get(
-        `http://localhost:8080/Integration/TPSYearly`,
+        `${process.env.REACT_APP_API_URL}/Integration/TPSYearly`,
         {},
         config
     );

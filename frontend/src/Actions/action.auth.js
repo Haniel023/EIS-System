@@ -19,7 +19,7 @@ export const login = (email, password) => async (dispatch) => {
 
     try {
         const res = await axios.post(
-            `http://localhost:8080/api/auth/Login`,
+            `${process.env.REACT_APP_API_URL}/api/auth/Login`,
             body,
             config
         );
@@ -47,7 +47,7 @@ export const register = (firstName, lastName, email, password) => async (dispatc
 
     try {
         const res = await axios.post(
-            `http://localhost:8080/api/auth/Register`,
+            `${process.env.REACT_APP_API_URL}/api/auth/Register`,
             body,
             config
         );

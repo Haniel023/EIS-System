@@ -47,6 +47,8 @@ const LoginForm = ({ login, check_authenticated }) => {
         }
 
     }
+    console.log(process.env.REACT_APP_API_URL)
+
 
     if (check_authenticated) {
         return <Redirect to="/" />;

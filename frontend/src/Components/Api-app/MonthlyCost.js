@@ -10,7 +10,7 @@ const MonthlyCost = () => {
     };
 
     const getData = Axios.get(
-        `http://localhost:8080/Integration/TPSMonthly`,
+        `${process.env.REACT_APP_API_URL}/Integration/TPSMonthly`,
         {},
         config
     );
