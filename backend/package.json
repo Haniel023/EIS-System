@@ -18,6 +18,10 @@
   "scripts": {
     "start": "node server.js"
   },
+  "engines": {
+    "npm": "6.13.4",
+    "node": "12.16.1"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Haniel023/EIS-System.git"
