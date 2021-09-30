@@ -32,7 +32,7 @@ const RegisterForm = ({ register }) => {
      const onSubmit = (e) => {
           e.preventDefault();
           register(firstNameData, lastNameData, emailData, passwordData)
-          history.push("/Login")
+          history.push("/")
           toast.success('Registration Success', {
                position: "top-right",
                autoClose: 3000,
@@ -71,7 +71,7 @@ const RegisterForm = ({ register }) => {
                          <input type="Password" onChange={(e) => onChangePassword(e)} name="Password" id="passWd" className="passW"></input>
 
                          <br></br>
-                         <h4 className="AlreadyAccount"><Link to="/Login">Already have an account?</Link></h4>
+                         <h4 className="AlreadyAccount"><Link to="/">Already have an account?</Link></h4>
                          <input type="submit" name="register" id="signUp" value="Sign Up" className="btn-reg"></input>
                     </form>
                </div>

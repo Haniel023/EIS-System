@@ -14,7 +14,7 @@ const HeaderPanel = () => {
       <div className="alignMiddle childPanel1">
         <div>
           <div className="alignMiddle inlineBlock childLogo">
-            <img src={salesRevenue} width="100" height="100"></img>
+            <img src={salesRevenue} width="70" height="70"></img>
           </div>
           <div className="alignMiddle inlineBlock childLogo2">
             <h1 className="noMargin">{sales_Revenue}</h1>
@@ -23,7 +23,7 @@ const HeaderPanel = () => {
         </div>
         <div>
           <div className="alignMiddle inlineBlock childLogo">
-            <img src={profit} width="100" height="100"></img>
+            <img src={profit} width="70" height="70"></img>
           </div>
           <div className="alignMiddle inlineBlock childLogo2">
             <h1 className="noMargin">{profits}</h1>
@@ -37,7 +37,7 @@ const HeaderPanel = () => {
           <span>Sold Units</span>
         </div>
         <div>
-          <img src={soldUnits} width="100" height="100"></img>
+          <img src={soldUnits} width="90" height="90"></img>
         </div>
       </div>
       <div className="alignMiddle childPanel3 ">

@@ -14,6 +14,7 @@ app.use(cors());
 const auth = require('./routes/auth.route');
 
 app.use('/api/auth', auth)
+app.use('/Integration', require('./api/index'))
 
 app.get('/', (req, res) => {
     res.send('Hello')

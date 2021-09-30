@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import HeaderPanel from "./HeaderPanel";
 import Revenue from "./Revenue";
 import Expenses from "./Expenses";
@@ -11,6 +11,8 @@ import { logout } from "../../Actions/action.auth"
 import { connect } from "react-redux";
 import { useHistory } from "react-router-dom"
 import { toast } from "react-toastify";
+import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
+import Grid from "react-loader-spinner";
 
 const Dashboard = ({ isAuthenticated }) => {
 
@@ -18,7 +20,7 @@ const Dashboard = ({ isAuthenticated }) => {
 
   const logoutSubmission = () => {
     logout()
-    history.push('/Login');
+    history.push('/');
     toast.success('Logout Success', {
       position: "top-right",
       autoClose: 3000,
@@ -27,7 +29,7 @@ const Dashboard = ({ isAuthenticated }) => {
       pauseOnHover: true,
       draggable: true,
       progress: undefined,
-      });
+    });
   }
 
   const loggedInNow = (
@@ -42,22 +44,41 @@ const Dashboard = ({ isAuthenticated }) => {
     </>
   );
 
+  const [Loader, setLoader] = useState(true)
+  useEffect(() => {
+    setTimeout(() => {
+      setLoader(false)
+    }, 1500)
+  }, [])
+
   return (
-    <div>
-      <span>
-        <>{isAuthenticated ? loggedInNow : notloggedIn}</>
-      </span>
-      <HeaderPanel />
-      <div className="mainPanel">
-          <Revenue />
-          <Expenses />
-          <IncomeStatement />
-          <RevenueTile />
-          <ExpensesTile />
-          <NpMarginTile />
-          <GpMarginTile />
-      </div>
-      <button onClick={()=>{ logoutSubmission() }} to="/">LOGOUT</button>
+    <div style={{minHeight:'100%'}}>
+          <div>
+            <span>
+              <>{isAuthenticated ? loggedInNow : notloggedIn}</>
+            </span>
+            <HeaderPanel />
+            <div className="mainPanel">
+              <Revenue />
+              <Expenses />
+              <IncomeStatement />
+              <RevenueTile />
+              <ExpensesTile />
+              <NpMarginTile />
+              <GpMarginTile />
+            </div>
+            <button onClick={() => { logoutSubmission() }} to="/">LOGOUT</button>
+          </div>
+          <div style={{ minHeight: '120%', minWidth: '100%', backgroundColor: '#e5e5e5', display: Loader === true ? 'flex' : 'none', 
+                          justifyContent: 'center', alignItems:'center', position:'absolute', top: 0, }}>
+            <Grid
+              type="Puff"
+              color="#0abab5"
+              height={100}
+              width={100}
+              timeout={1500}
+            />
+          </div>
     </div>
   );
 };
