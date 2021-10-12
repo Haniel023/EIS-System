@@ -317,38 +317,38 @@ body {
   color: white;
 }
 
-.AlreadyAccount{
-position: absolute;
-width: 170px;
-height: 16px;
-left: 645px;
-top: 483px;
-font-style: normal;
-font-weight: 300;
-font-size: 12px;
-line-height: 15px;
-color: #0abab5;
+.AlreadyAccount {
+  position: absolute;
+  width: 170px;
+  height: 16px;
+  left: 645px;
+  top: 483px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 15px;
+  color: #0abab5;
 }
 
 /*----------------------------------- Dashboard Page--------------------------------------- */
-.mainPanel{
+.mainPanel {
   display: grid;
   grid-template-columns: auto auto 24% 13%;
   grid-template-rows: auto;
-  grid-template-areas: 
-  "tLeft tLeft tRight tURight"
-  "tLeft tLeft tRight tUMRight"
-  "bLeft bLeft tRight bUMRight"
-  "bLeft bLeft tRight bURight";
+  grid-template-areas:
+    "tLeft tLeft tRight tURight"
+    "tLeft tLeft tRight tUMRight"
+    "bLeft bLeft tRight bUMRight"
+    "bLeft bLeft tRight bURight";
   column-gap: 20px;
   row-gap: 20px;
 }
 
-.graph{
+.graph {
   width: 90%;
   margin: 20px auto;
 }
-/*---------------------- Header Panel ----------------------- */
+/* ---------------------- Header Panel -----------------------
 
 .headerPanel {
   display: flex;
@@ -398,11 +398,150 @@ color: #0abab5;
   border-radius: 50%;
   border: 5px solid #ffffff;
   display: inline-block;
+} */
+
+/*---------------------- Header Panel ----------------------- */
+
+.headerPanel {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  color: #ffffff;
+  margin: 20px;
+}
+
+.headerPanel__statistics,
+.headerPanel__profile {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  height: 40vh;
+}
+
+.headerPanel__statistics {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 75%;
+  background-color: #0abab5;
+}
+
+.alignMiddle {
+  vertical-align: middle;
+  text-align: center;
+}
+
+.noMargin {
+  margin: 0;
+}
+
+.inlineBlock {
+  display: inline-block;
+  position: relative;
+}
+
+.childPanel1 {
+  width: 33%;
+}
+.childPanel2 {
+  width: 33%;
+}
+.childPanel3 {
+  width: 33%;
+}
+
+.childLogo {
+  width: inherit;
+}
+.childLogo2 {
+  width: inherit;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  border-radius: 50%;
+  border: 5px solid #ffffff;
+  display: inline-block;
+  margin-top: 15px;
+}
+
+/*---------------------- Header Panel: Profile Box ----------------------- */
+
+.headerPanel__profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  background-color: #0a8783;
+}
+
+.topRightDashboard__container,
+.topRightDashboard__card,
+.topRightDashboard__cardBottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.topRightDashboard__card {
+  border-radius: 20px;
+}
+
+.topRightDashboard__cardTop {
+  padding: 0 20px;
+  margin-bottom: 10px;
+}
+
+.topRightDashboard__name {
+  color: white;
+}
+
+.topRightDashboard__cardBottom {
+  border-top: 1px solid white;
+  padding-top: 10px;
+  margin-bottom: -30px;
+}
+
+.topRightDashboard__time {
+  color: white;
+}
+
+.topRightDashboard__date {
+  color: white;
+  margin-top: -10px;
+}
+
+.topRightDashboard__button {
+  margin-top: 40px;
+}
+
+.topRightDashboard__logoutButton {
+  background-color: white;
+  color: #0a8783;
+  border: none;
+  /* margin-bottom: 50px; */
+  height: 35px;
+  width: 110px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 15px;
+}
+
+.topRightDashboard__logoutButton:hover {
+  background-color: #0abab5;
+  color: white;
+  border: 1px solid white;
 }
 
 /*---------------------- Revenue Panel ----------------------- */
 
-.revenuePanel{
+.revenuePanel {
   grid-area: tLeft;
   color: #000000;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -412,15 +551,14 @@ color: #0abab5;
   flex-direction: column;
 }
 
-#revenueLabel{
+#revenueLabel {
   font-size: 1.4rem;
   margin: 15px 0 0 15px;
 }
 
-
 /*---------------------- Expenses Panel ----------------------- */
 
-.expensesPanel{
+.expensesPanel {
   grid-area: bLeft;
   color: #000000;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -429,13 +567,13 @@ color: #0abab5;
   flex-direction: column;
 }
 
-#expensesLabel{
+#expensesLabel {
   font-size: 1.4rem;
   margin: 15px 0 0 15px;
 }
 
 /*---------------------- Income Statement Panel ----------------------- */
-.incStatPanel{
+.incStatPanel {
   grid-area: tRight;
   height: 500px;
   color: #000000;
@@ -446,13 +584,13 @@ color: #0abab5;
   flex-direction: column;
 }
 
-#incStatLabel{
+#incStatLabel {
   font-size: 1.4rem;
   margin: 15px 0 0 15px;
 }
 
 /*---------------------- Revenue Tile ----------------------- */
-.revenueTile{
+.revenueTile {
   grid-area: tURight;
   height: 115px;
   color: #ffffff;
@@ -462,20 +600,20 @@ color: #0abab5;
   margin-top: 20px;
   flex-direction: column;
   text-align: center;
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
-#subRevenue{
+#subRevenue {
   font-weight: 100;
   margin: 5px auto auto;
 }
 
-#subRevPercent{
+#subRevPercent {
   font-size: 1.8rem;
 }
 
 /* ---------------------- Expenses Tile -----------------------*/
-.expensesTile{
+.expensesTile {
   grid-area: tUMRight;
   height: 115px;
   color: #ffffff;
@@ -485,20 +623,20 @@ color: #0abab5;
   margin-top: -15px;
   flex-direction: column;
   text-align: center;
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
-#subExpenses{
+#subExpenses {
   font-weight: 100;
   margin: 5px auto auto;
-} 
+}
 
-#subExpPercent{
+#subExpPercent {
   font-size: 1.8rem;
 }
 
 /* ---------------------- Net Profit Margin Tile -----------------------*/
-.npMarginTile{
+.npMarginTile {
   grid-area: bUMRight;
   height: 115px;
   color: #ffffff;
@@ -508,22 +646,22 @@ color: #0abab5;
   margin-top: -15px;
   flex-direction: column;
   text-align: center;
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
-#npMarginTile{
+#npMarginTile {
   font-weight: 100;
   margin: 5px auto auto;
-} 
+}
 
-#npMarginPercent{
+#npMarginPercent {
   font-size: 2rem;
   margin-top: 1%;
 }
 
 /* ---------------------- Gross Profit Margin Tile -----------------------*/
 
-.gpMarginTile{
+.gpMarginTile {
   grid-area: bURight;
   height: 115px;
   color: #ffffff;
@@ -533,15 +671,15 @@ color: #0abab5;
   margin-top: -15px;
   flex-direction: column;
   text-align: center;
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
-#gpMarginTile{
+#gpMarginTile {
   font-weight: 100;
   margin: 5px auto auto;
-} 
+}
 
-#gpMarginPercent{
+#gpMarginPercent {
   font-size: 2rem;
   margin-top: 1%;
 }
