@@ -7,46 +7,68 @@ let profits = "₱ " + 392.94;
 let sold_Units = 4206;
 let salesTarget = "₱ " + 1300;
 let salesTargetPercent = 100 + "%";
+let profile_name = "John da Doe";
+let time = "12:00 PM";
+let date = "07/07/2021";
 
 const HeaderPanel = () => {
   return (
     <div className="headerPanel">
-      <div className="alignMiddle childPanel1">
-        <div>
-          <div className="alignMiddle inlineBlock childLogo">
-            <img src={salesRevenue} width="70" height="70"></img>
+      <div className="headerPanel__statistics">
+        <div className="alignMiddle childPanel1">
+          <div>
+            <div className="alignMiddle inlineBlock childLogo">
+              <img src={salesRevenue} width="70" height="70"></img>
+            </div>
+            <div className="alignMiddle inlineBlock childLogo2">
+              <h1 className="noMargin">{sales_Revenue}</h1>
+              <span className="panelLabel">Sales Revenue</span>
+            </div>
           </div>
-          <div className="alignMiddle inlineBlock childLogo2">
-            <h1 className="noMargin">{sales_Revenue}</h1>
-            <span className="panelLabel">Sales Revenue</span>
+          <div>
+            <div className="alignMiddle inlineBlock childLogo">
+              <img src={profit} width="70" height="70"></img>
+            </div>
+            <div className="alignMiddle inlineBlock childLogo2">
+              <h1 className="noMargin">{profits}</h1>
+              <span>Profit</span>
+            </div>
           </div>
         </div>
-        <div>
-          <div className="alignMiddle inlineBlock childLogo">
-            <img src={profit} width="70" height="70"></img>
+        <div className="alignMiddle childPanel2">
+          <div>
+            <h1 className="noMargin">{sold_Units}</h1>
+            <span>Sold Units</span>
           </div>
-          <div className="alignMiddle inlineBlock childLogo2">
-            <h1 className="noMargin">{profits}</h1>
-            <span>Profit</span>
+          <div>
+            <img src={soldUnits} width="90" height="90"></img>
+          </div>
+        </div>
+        <div className="alignMiddle childPanel3 ">
+          <div className="alignMiddle">
+            <h1 className="noMargin">{salesTarget}</h1>
+            <span>Sales Target</span>
+          </div>
+          <div className="alignMiddle">
+            <h1 className="circle noMargin">{salesTargetPercent}</h1>
           </div>
         </div>
       </div>
-      <div className="alignMiddle childPanel2">
-        <div>
-          <h1 className="noMargin">{sold_Units}</h1>
-          <span>Sold Units</span>
+      <div className="headerPanel__profile">
+        {/* Vernon's Part: Profile Tab - Top Right */}
+        <div className="topRightDashboard__container">
+          <div className="topRightDashboard__card">
+            <div className="topRightDashboard__cardTop">
+              <h1 className="topRightDashboard__name">{profile_name}</h1>
+            </div>
+            <div className="topRightDashboard__cardBottom">
+              <h3 className="topRightDashboard__time">{time}</h3>
+              <h3 className="topRightDashboard__date">{date}</h3>
+            </div>
+          </div>
         </div>
-        <div>
-          <img src={soldUnits} width="90" height="90"></img>
-        </div>
-      </div>
-      <div className="alignMiddle childPanel3 ">
-        <div className="alignMiddle">
-          <h1 className="noMargin">{salesTarget}</h1>
-          <span>Sales Target</span>
-        </div>
-        <div className="alignMiddle">
-          <h1 className="circle noMargin">{salesTargetPercent}</h1>
+        <div className="topRightDashboard__button">
+          <button className="topRightDashboard__logoutButton">LOGOUT</button>
         </div>
       </div>
     </div>
