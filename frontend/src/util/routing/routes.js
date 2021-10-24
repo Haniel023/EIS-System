@@ -5,6 +5,7 @@ import PrivateRoute from "../routing/privateRoute";
 import LoginForm from "../../Components/Login/LoginForm";
 import RegisterForm from "../../Components/Register/RegisterForm";
 import Dashboard from "../../Components/Dashboard/Dashboard";
+import Support from "../../Components/Support/Support";
 
 //All the routes file
 const Routes = () => {
@@ -14,6 +15,7 @@ const Routes = () => {
         <Route exact path="/" component={LoginForm} />
         <Route exact path="/Register" component={RegisterForm} />
         <PrivateRoute exact path="/Dashboard" component={Dashboard} />
+        <Route exact path="/Support" component={Support} />
       </Switch>
     </div>
   );
