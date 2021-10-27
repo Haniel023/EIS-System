@@ -683,3 +683,52 @@ body {
   font-size: 2rem;
   margin-top: 1%;
 }
+
+/* ---------------------- Developer Pages -----------------------*/
+#devPage {
+  margin-left: 150px;
+  margin-top: 20px;
+}
+#devPage1 {
+  margin-bottom: 130px;
+}
+.devFullStack {
+  position: absolute;
+  left: 300px;
+  top: 90px;
+}
+.devFrontEnd {
+  position: absolute;
+  left: 250px;
+  top: 270px;
+}
+.devFrontEnd1 {
+  position: absolute;
+  left: 650px;
+  top: 270px;
+}
+.devFrontEnd2 {
+  position: absolute;
+  left: 1150px;
+  top: 270px;
+}
+.devFrontEnd3 {
+  position: absolute;
+  left: 440px;
+  top: 450px;
+}
+.devFrontEnd4 {
+  position: absolute;
+  left: 850px;
+  left: 950px;
+  top: 450px;
+}
+.Container1 {
+  position: absolute;
+  width: 1500px;
+  height: 700px;
+  left: 0px;
+  top: 0px;
+  background: #ffffff;
+  
+}
