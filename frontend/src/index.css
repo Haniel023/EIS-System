@@ -19,6 +19,7 @@ body {
 }
 
 .mainDiv{
+  transition: all .4s ease;
   margin-left: 70px; 
   padding: 0px 10px;
 }
@@ -409,20 +410,19 @@ body {
 
 .sidebar{
   color: #0a8783;
-  height: 100%; /* Full-height: remove this if you want "auto" height */
-  width: 70px; /* Set the width of the sidebar */
-  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-  z-index: 1; /* Stay on top */
+  height: 100%; 
+  width: 70px;
+  position: fixed; 
+  z-index: 1; 
   text-align: center;
-  top: 0; /* Stay at the top */
+  top: 0; 
   left: 0;
-  background-color: #111; /* Black */
-  overflow-x: hidden; /* Disable horizontal scroll */
+  background-color:#000000; 
+  overflow-x: hidden;
   padding-top: 20px;
   transition: all .4s ease;
   overflow: hidden;
-  /* border-right:#000000; */
-  /* border-style: solid; */
+
 
 }
 
@@ -430,7 +430,10 @@ body {
   width: 300px;
   display: block;
   background-color:#ffffff;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+  
 }
+
 
 .sidebar img{
   width: 50px;
@@ -457,13 +460,14 @@ body {
   border: none;
   font-size: large;
   font-weight: bold;
+  color:transparent
 }
 
-.sidebarButton:hover{
-  background-color:#000000;
+/* .sidebarButton:hover{ */
+  /* background-color:#000000; */
   /* color:#0abab5; */
   
-}
+/* } */
 
 .sidebar:hover .sidebarButton{
   background-color:#0a8783;
@@ -498,22 +502,30 @@ body {
   align-items: center;
   width: 100%;
   color: #ffffff;
-  margin: 20px;
+  margin: 0px 0px 0px 0px;
 }
 
 .headerPanel__statistics,
 .headerPanel__profile {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 5px;
+  border-radius: 20px;
   height: 40vh;
+}
+
+.headerPanel__profile{
+  width: 1px;
 }
 
 .headerPanel__statistics {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 75%;
+  width: 79%;
   background-color: #0abab5;
+}
+
+.headerPanel__statistics div{
+  padding: 20px;
 }
 
 .alignMiddle {
@@ -534,11 +546,15 @@ body {
   width: 33%;
 }
 .childPanel2 {
+  border-left: 1px solid white;
+  border-right: 1px solid white;
   width: 33%;
 }
 .childPanel3 {
   width: 33%;
 }
+
+
 
 .childLogo {
   width: inherit;
