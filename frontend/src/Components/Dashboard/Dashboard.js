@@ -13,6 +13,7 @@ import { useHistory } from "react-router-dom"
 import { toast } from "react-toastify";
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 import Grid from "react-loader-spinner";
+import Sidebar from "./Sidebar";
 
 const Dashboard = ({ isAuthenticated }) => {
 
@@ -53,10 +54,11 @@ const Dashboard = ({ isAuthenticated }) => {
 
   return (
     <div style={{minHeight:'100%'}}>
-          <div>
+          <div className="mainDiv">
             <span>
               <>{isAuthenticated ? loggedInNow : notloggedIn}</>
             </span>
+            <Sidebar />
             <HeaderPanel />
             <div className="mainPanel">
               <Revenue />
