@@ -6,18 +6,18 @@ const Sidebar = () => {
             <div className="sidelogo">
                 <img src={logo} width="40" height="40"></img>
             </div>
-            <h2 className="sidebarButton">
+            <button className="sidebarButton">
                 Dashboard
-            </h2>
-            <h2 className="sidebarButton">
+            </button>
+            <button className="sidebarButton">
                 Support
-            </h2>
-            <h2 className="sidebarButton">
+            </button>
+            <button className="sidebarButton">
                 Developers
-            </h2>
-            <h2 className="sidebarButton">
+            </button>
+            <button className="sidebarButton logoutButton">
                 Logout
-            </h2>
+            </button>
         </div>
     );
   };

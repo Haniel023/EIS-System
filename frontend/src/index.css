@@ -420,7 +420,6 @@ body {
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 20px;
   transition: all .4s ease;
-  -webkit-transition: all .4s ease;
   overflow: hidden;
   /* border-right:#000000; */
   /* border-style: solid; */
@@ -437,7 +436,6 @@ body {
   width: 50px;
   height: 50px;
   transition: all .4s ease;
-  -webkit-transition: all .4s ease;
 }
 
 .sidebar:hover img{
@@ -451,24 +449,41 @@ body {
 .sidebarButton{
   padding:10px;
   cursor:pointer;
-  transition: all .4s ease;
-  -webkit-transition: all .4s ease;
+  transition: all .01s ease;
+  width: inherit;
+  margin-top: 20px;
+  background-color: transparent;
+  line-height: 50px;
+  border: none;
+  font-size: large;
+  font-weight: bold;
 }
 
-.sidebarButton::placeholder{
-  content: "HEllo";
+.sidebarButton:hover{
+  background-color:#000000;
+  /* color:#0abab5; */
+  
 }
 
 .sidebar:hover .sidebarButton{
-  background-color:#0abab5;
+  background-color:#0a8783;
   color:#ffffff;
+}
+
+.sidebar:hover .logoutButton{
+  background-color:firebrick;
 }
 
 .sidehide{
   display: none;
   transition: all .4s ease;
-  -webkit-transition: all .4s ease;
 }
+
+/* .logoutButton{
+  bottom: 0;
+} */
+
+
 
 /* .sidelogo{
  asd
