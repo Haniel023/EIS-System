@@ -603,6 +603,7 @@ body {
 
 .topRightDashboard__name {
   color: white;
+  text-align: center;
 }
 
 .topRightDashboard__cardBottom {

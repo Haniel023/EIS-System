@@ -1,17 +1,40 @@
 import profit from "./Assets/profit.png";
 import salesRevenue from "./Assets/salesRevenue.png";
 import soldUnits from "./Assets/soldUnits.png";
+import React, { useState, useEffect } from 'react';
+import { logout } from "../../Actions/action.auth";
+import { toast } from "react-toastify";
+import { useHistory } from "react-router-dom";
 
 let sales_Revenue = "₱ " + 1432.04;
 let profits = "₱ " + 392.94;
 let sold_Units = 4206;
 let salesTarget = "₱ " + 1300;
 let salesTargetPercent = 100 + "%";
-let profile_name = "John da Doe";
-let time = "12:00 PM";
-let date = "07/07/2021";
+
 
 const HeaderPanel = () => {
+  const [dateState, setDateState] = useState(new Date());
+  useEffect(() => {
+    setInterval(() => setDateState(new Date()), 30000);
+  }, []);
+
+
+const history = useHistory();
+const logoutSubmission = () => {
+  logout()
+  history.push('/');
+  toast.success('Logout Success', {
+    position: "top-right",
+    autoClose: 3000,
+    hideProgressBar: false,
+    closeOnClick: true,
+    pauseOnHover: true,
+    draggable: true,
+    progress: undefined,
+  });
+}
+
   return (
     <div className="headerPanel">
       <div className="headerPanel__statistics">
@@ -59,16 +82,26 @@ const HeaderPanel = () => {
         <div className="topRightDashboard__container">
           <div className="topRightDashboard__card">
             <div className="topRightDashboard__cardTop">
-              <h1 className="topRightDashboard__name">{profile_name}</h1>
+              <h1 className="topRightDashboard__name">Welcome Executives!</h1>
             </div>
             <div className="topRightDashboard__cardBottom">
-              <h3 className="topRightDashboard__time">{time}</h3>
-              <h3 className="topRightDashboard__date">{date}</h3>
+              <h3 className="topRightDashboard__time">
+              {dateState.toLocaleString('en-US', {
+                hour: 'numeric',
+                minute: 'numeric',
+                hour12: true,
+            })}</h3>
+              <h3 className="topRightDashboard__date">
+              {dateState.toLocaleDateString('en-GB', {
+                 day: 'numeric',
+                 month: 'short',
+                 year: 'numeric',
+              })}</h3>
             </div>
           </div>
         </div>
         <div className="topRightDashboard__button">
-          <button className="topRightDashboard__logoutButton">LOGOUT</button>
+          <button className="topRightDashboard__logoutButton" onClick={() => { logoutSubmission() }} to="/">LOGOUT</button>
         </div>
       </div>
     </div>
