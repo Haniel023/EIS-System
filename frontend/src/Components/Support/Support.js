@@ -13,7 +13,7 @@ class Support extends React.Component {
 
  render() {
   return (
-    <div className='suppBackground'>
+    <div className='support-container'>
       <SupportHeader/>
       <div className="talk-bubble tri-right round btm-left">
   <div class="talktext">
@@ -24,16 +24,18 @@ class Support extends React.Component {
     </div>
     <div className="">
         <form id="contact-form" onSubmit={this.handleSubmit.bind(this)} method="POST">
-            <h2>Send your feedbacks!</h2>
+            <h2 className = 'h2-feedback'>Send your feedbacks!</h2>
           <div className="form-group">
-            <label htmlFor="exampleInputEmail1">Email address</label>
-            <input type="email" className="form-control" aria-describedby="emailHelp" value={this.state.email} onChange={this.onEmailChange.bind(this)} />
+          
+            <input type="email" className="email-area" aria-describedby="emailHelp" value={this.state.email} onChange={this.onEmailChange.bind(this)} 
+            placeholder = 'Enter your Email Address'/>
           </div>
           <div className="form-group">
-            <label htmlFor="message">Message</label>
-            <textarea className="form-control" rows="5" value={this.state.message} onChange={this.onMessageChange.bind(this)} />
+            
+            <textarea className="comment-area" rows="5" value={this.state.message} onChange={this.onMessageChange.bind(this)} 
+            placeholder ='Type your message here, criticism, feedbacks, praises, issues, difficulties or anything that you think'/>
           </div>
-          <button type="submit" className="btn btn-primary">Submit</button>
+          <button type="submit" className="submit-btn">Submit</button>
         </form>
       </div>
     <div className='contact-us'>
