@@ -723,7 +723,7 @@ body {
 	margin: 40px;
   display: inline-block;
   position: relative;
-	width: 200px;
+	width: 300px;
 	height: auto;
 	background-color: #ffff;
 }
@@ -761,6 +761,7 @@ body {
   border-radius: 37px;
   color: #ffffff;
   
+  
 }
 
 
@@ -775,17 +776,18 @@ body {
 }
 
 .submit-btn {
-  position: absolute;
+  position: fixed;
   width: 177px;
   height: 42px;
-  left: 790px;
-  bottom: 100px;
+  left: 41%;
+  bottom: 9%;
   background: #0abab5;
   border-radius: 17px;
   border: #0abab5;
   font-family: "Montserrat";
   font-size: medium;
   color: white;
+  cursor: pointer;
 }
 
 .support-container {
@@ -807,4 +809,14 @@ body {
 .h2-feedback {
   position: absolute;
   top: 400px
+}
+
+
+
+.support-text {
+  padding: 25px;
+}
+
+.support-text2 {
+  padding: 11px;
 }
