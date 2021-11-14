@@ -25,10 +25,10 @@ const Sidebar = () => {
             <img src={icoDevelopers} className="buttonLogo"></img>
                 Developers
             </button>
-            <button className="sidebarButton logoutButton">
+            {/* <button className="sidebarButton logoutButton">
             <img src={icoLogout} className="buttonLogo"></img>
                 Logout
-            </button>
+            </button> */}
         </div>
     );
   };

@@ -27,8 +27,8 @@ const DeveloperPage = () => {
             <div>    
             <img src={img6} className="image6" alt=""/> 
                 <div className="developer1">
-                    <h1>Jether DeLeon</h1>
-                    <h5>Full Stack Developer </h5> 
+                    <h1>Jether De Leon</h1>
+                    <h5>Team Lead/Full Stack Developer</h5> 
                 </div>
 
                 <div className="line1">
