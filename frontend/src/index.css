@@ -818,99 +818,119 @@ body {
   margin-top: 1%;
 }
 
-
 /* ---------------------- Developer Pages -----------------------*/
 #devPage {
   margin-left: 210px;
   margin-top: 60px;
-  
+
 }
 .line1 {
-  margin-bottom: 1020px;
+position: absolute;
+width: 1674px;
+height: 0px;
+left: 156px;
+top: 300px;
+border: 1px solid #000000;
+transform: rotate(0.1deg);
 }
 
-/* .line{
-  border-bottom: 2px solid rgb(12, 1, 1);
-  display: block;
-} */
+.line2{
+position: absolute;
+width: 30px;
+height: 0px;
+left: 105px;
+top: 49px;
+border: 3px solid #0A8783;
+transform: rotate(90deg);
+}
+
+
 #h1{
   margin-left: 120px;
   margin-bottom: 10px;
- 
+
 }
 .image6 {
-  margin-bottom: 300px;
-  margin-left: 0px;
-  margin-top: 10px;
+  position:absolute;
+  top: 90px;
+  left: 200px;
   width: 130px;
   clip-path: circle();
-   
+
  }
  .developer1{
   position :absolute;
   top: 90px;
-  left: 290px;
+  left: 350px;
+
 }
 .image4 {
-  top:10 px;
-  margin-left: 20px;
+  position:absolute;
+  top: 340px;
+  left: 200px;
  width: 130px;
  clip-path: circle();
-  
+
 }
 .developer2{
   position :absolute;
   top: 360px;
-  left: 160px;
+  left: 350px;
 }
 .image3 {
-  margin-left: 150px;
- margin-bottom: 20px;
+position:absolute;
+top: 360px;
+left: 740px;
  width: 130px;
  clip-path: circle();
-  
+
 }
 .developer3{
   position :absolute;
   top: 360px;
-  left: 570px;
+  left: 890px;
 }
 
 .image2 {
-  margin-left: 380px;
- margin-bottom: 5px;
+position: absolute;
+ top:340px;
+ left: 1370px;
  width: 130px;
  clip-path: circle();
-  
 }
+
 .developer4{
   position :absolute;
   top: 360px;
-  left: 1080px;
+  left: 1520px;
 }
+
 .image1 {
-  margin-left: 210px;
- margin-top: 5px;
- width: 130px;
- clip-path: circle();
-  
+  position:absolute;
+  top: 570px;
+  left: 430px;
+  width: 130px;
+  clip-path: circle();
+
 }
 .developer5{
   position :absolute;
-  top: 540px;
-  left: 350px;
+  top: 590px;
+  left: 580px;
 }
+
 .image5 {
-  margin-left: 300px;
- margin-bottom: 20px;
- width: 130px;
- clip-path: circle();
-  
+  position:absolute;
+  top: 590px;
+  left: 990px;
+  width: 130px;
+  clip-path: circle();
+
 }
 .developer6{
   position :absolute;
-  top: 540px;
-  left: 780px;
+  top: 590px;
+  left: 1140px;
 }
 
 /* ---------------------- Support Page -----------------------*/
