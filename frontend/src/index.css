@@ -434,13 +434,14 @@ body {
 }
 
 
-.sidebar img{
+.sidebar .sideLogo{
   width: 50px;
   height: 50px;
   transition: all .4s ease;
+
 }
 
-.sidebar:hover img{
+.sidebar:hover .sideLogo{
   display:inline;
   margin-top: -30px;
   margin-left: -2px;
@@ -448,18 +449,24 @@ body {
   height:302px;
 }
 
-.sidebarButton{
+.sidebar .sidebarButton{
   padding:10px;
   cursor:pointer;
   transition: all .01s ease;
   width: inherit;
+  height: 80px;
   margin-top: 20px;
   background-color: transparent;
-  line-height: 50px;
+  /* background-color: white; */
+  color:transparent;
+  /* color:black; */
+  /* line-height: 50px; */
+  line-height:0px;
+  text-align: left;
   border: none;
   font-size: large;
   font-weight: bold;
-  color:transparent
+  
 }
 
 /* .sidebarButton:hover{ */
@@ -471,15 +478,37 @@ body {
 .sidebar:hover .sidebarButton{
   background-color:#0a8783;
   color:#ffffff;
+  line-height: 50px;
+  float:right
 }
 
 .sidebar:hover .logoutButton{
   background-color:firebrick;
 }
 
-.sidehide{
+.sidebar .sidehide{
   display: none;
   transition: all .4s ease;
+}
+
+.sidebar .buttonLogo{
+  transition: all .4s ease;
+  filter:invert();
+  width: 50px;
+  height: 50px;
+  vertical-align: middle;
+  padding-right: 10px;
+}
+
+.sidebar .sidebarButton:hover{
+  filter: invert();
+  /* filter:hue-rotate(); */
+}
+
+.sidebar:hover .buttonLogo{
+  width: 50px;
+  height: 50px;
+  /* display: none; */
 }
 
 /* .logoutButton{
