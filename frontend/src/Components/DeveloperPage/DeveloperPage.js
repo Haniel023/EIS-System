@@ -16,6 +16,7 @@ const DeveloperPage = () => {
                     <img src={img4} className="image4" alt=""/> 
                     <div className="developer2">
                         <h1>Josiah Autor</h1>
+                        <h5>Frontend Developer </h5>     
                     </div>
                     <img src={img6} className="image6" alt=""/> 
                     <div className="developer1">
