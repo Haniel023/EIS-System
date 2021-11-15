@@ -2,7 +2,7 @@ import logo from "./Assets/EISLogo.png";
 import icoDashboard from "./Assets/icoDashboard.png";
 import icoSupport from "./Assets/icoSupport.png";
 import icoDevelopers from "./Assets/icoDevelopers.png";
-import icoLogout from "./Assets/icoLogout.png";
+// import icoLogout from "./Assets/icoLogout.png";
 import { useHistory } from "react-router-dom";
 
 const Sidebar = () => {

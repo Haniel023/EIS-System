@@ -27,4 +27,12 @@ router.get("/TPSYearly", async (req, res, next) => {
     } catch (err) { console.log(err) }
 })
 
+router.get("/INSMonthly", async (req, res, next) => {
+    try {
+        let getMonthlyIvent = await axios.get("https://dustin-etits.klylylydeee.xyz/products/integration/analytics", config)
+        console.log(getMonthlyIvent.data)
+        res.status(200).send(getMonthlyIvent.data)
+    } catch (err) { console.log(err) }
+})
+
 module.exports = router
