@@ -66,7 +66,7 @@ const MonthlyInvent = () => {
 
     return (
         <div>
-            <Line data={dataMap} height={500} options={options} />
+            <Line data={dataMap} height={450} options={options} />
         </div>
     )
 }

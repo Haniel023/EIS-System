@@ -9,10 +9,13 @@ body {
 
 .Container {
   position: absolute;
-  width: 922px;
-  height: 614px;
-  left: 480px;
-  top: 180px;
+  width: 40vw;
+  height: 20vh;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
   background: #ffffff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 37px;
@@ -64,8 +67,8 @@ body {
 }
 
 .logo2 {
-  top: 380px;
-  left: 570px;
+  top: 240px;
+  left: 72px;
 }
 
 .Quote,
@@ -199,13 +202,15 @@ body {
 
 /*----------------------------------- Register Page--------------------------------------- */
 
-.register {
+.reg-container {
   position: absolute;
   width: 922px;
   height: 782px;
-  left: 499px;
-  top: 149px;
-
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
   background: #ffffff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 37px;
@@ -215,8 +220,8 @@ body {
   position: absolute;
   width: 333px;
   height: 782px;
-  left: 499px;
-  top: 149px;
+  left: 0;
+  top: 0;
   z-index: 1;
   background: #0abab5;
   border-radius: 37px 0px 0px 37px;
@@ -226,8 +231,8 @@ body {
   position: absolute;
   width: 373px;
   height: 49px;
-  left: 860px;
-  top: 260px;
+  left: 380px;
+  top: 90px;
   z-index: 3;
   font-style: normal;
   font-weight: 600;
@@ -1022,4 +1027,49 @@ left: 130px;
 top: 320px;
 border: 1px solid #000000;
 transform: rotate(-0.11deg);
+}
+
+@media only screen and (max-width: 1685px) {
+  .headerPanel__statistics div{
+    padding: 5px;
+  }
+}
+
+@media only screen and (max-width:1229px){
+  .headerPanel__statistics div{
+    padding: unset;
+  }
+  .carousel *{
+    height: 46vh !important;
+  } 
+
+  .carousel .control-dots .dot{
+    height: 8px !important;
+  }
+  .expensesPanel{
+    height: 51vh;
+  }
+}
+
+@media only screen and (max-width:1085px){
+  .headerPanel__statistics{
+    font-size: 1.1vw;
+  }
+  
+  .headerPanel__profile{
+    font-size: 1.2vw;
+  }
+  
+  .circle{
+    width: 9vw;
+    height: 9vw;
+    line-height: 9vw;
+  }
+}
+
+@media only screen and (max-width:990px){
+  .headerPanel__statistics img{
+    width: 6vmin;
+    height: 6vmin;
+  }
 }
