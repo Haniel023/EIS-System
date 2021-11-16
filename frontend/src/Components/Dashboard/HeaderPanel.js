@@ -89,7 +89,7 @@ const HeaderPanel = () => {
               <img src={salesRevenue} width="70" height="70"></img>
             </div>
             <div className="alignMiddle inlineBlock childLogo2">
-              <h1 className="noMargin">₱ {revenue}</h1>
+              <h1 className="noMargin">₱ {parseFloat(revenue).toFixed(2)}</h1>
               <span className="panelLabel">Sales Revenue</span>
             </div>
           </div>
@@ -98,7 +98,7 @@ const HeaderPanel = () => {
               <img src={profit} width="70" height="70"></img>
             </div>
             <div className="alignMiddle inlineBlock childLogo2">
-              <h1 className="noMargin">₱ {revenue * tax}</h1>
+              <h1 className="noMargin">₱ {(revenue * tax).toFixed(2)}</h1>
               <span>Profit</span>
             </div>
           </div>

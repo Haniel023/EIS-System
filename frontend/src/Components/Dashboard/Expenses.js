@@ -9,7 +9,7 @@ const Expenses = () => {
     <div className="expensesPanel">
       <h1 id="expensesLabel">Total Cost</h1>
       <div className="graph">
-        <Carousel showArrows={true} autoplay showThumbs={false} width={1000}>
+        <Carousel showArrows={true} autoplay showThumbs={false} height={500} className="carousel-slider">
           <div>
             <MonthlyCost />
           </div>

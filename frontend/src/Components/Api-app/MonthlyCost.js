@@ -63,7 +63,7 @@ const MonthlyCost = () => {
                     ''
                     :
                     <div>
-                        <Bar data={data} />
+                        <Bar data={data} height={450} options={{ maintainAspectRatio: false }}/>
                     </div>
             }
         </div>

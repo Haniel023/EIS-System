@@ -60,12 +60,13 @@ const MonthlyInvent = () => {
             y: {
                 beginAtZero: true
             }
-        }
+        },
+        maintainAspectRatio:false
     };
 
     return (
         <div>
-            <Line data={dataMap} options={options} />
+            <Line data={dataMap} height={500} options={options} />
         </div>
     )
 }

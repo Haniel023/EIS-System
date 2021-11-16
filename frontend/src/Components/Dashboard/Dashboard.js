@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import HeaderPanel from "./HeaderPanel";
 import Revenue from "./Revenue";
 import Expenses from "./Expenses";
-import IncomeStatement from "./IncomeStatement";
 import RevenueTile from "./RevenueTile";
 import ExpensesTile from "./ExpensesTile";
 import NpMarginTile from "./NpMarginTile";
@@ -63,7 +62,6 @@ const Dashboard = ({ isAuthenticated }) => {
             <div className="mainPanel">
               <Revenue />
               <Expenses />
-              <IncomeStatement />
               <RevenueTile />
               <ExpensesTile />
               <NpMarginTile />
